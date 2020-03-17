@@ -1,0 +1,59 @@
+{
+	"name": "electron-ts-vscode-template",
+	"displayName": "electron-ts-vscode-template",
+	"description": "A minimal Electron template project written with Typescript",
+	"version": "0.0.1",
+	"license": "CC0-1.0",
+	"repository": "https://github.com/phoihos/electron-ts-vscode-template",
+	"author": {
+		"name": "phoihos"
+	},
+	"keywords": [
+		"electron",
+		"typescript",
+		"vscode",
+		"template",
+		"quickstart"
+	],
+	"build": {
+		"appId": "com.example.app",
+		"productName": "HelloWorld",
+		"files": [
+			{
+				"from": "out",
+				"to": "",
+				"filter": [
+					"**/!(*.map)"
+				]
+			},
+			"package.json"
+		]
+	},
+	"main": "main.js",
+	"scripts": {
+		"cp-static": "cpx-fixed \"./src/**/!(*.ts|*.js|*.map)\" \"./out/\" -C -v",
+		"cp-static:watch": "cpx-fixed \"./src/**/!(*.ts|*.js|*.map)\" \"./out/\" -C -v -w",	
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"lint": "eslint src --ext ts",
+		"pretest": "npm run compile && npm run cp-static && npm run lint",
+		"start": "npm run compile && npm run cp-static && electron ./out/main.js",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder",
+		"debug:wait": "wait-on tcp:9223"
+	},
+	"dependencies": {
+		"electron-is-dev": "^1.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "^12.11.7",
+		"@typescript-eslint/eslint-plugin": "^2.18.0",
+		"@typescript-eslint/parser": "^2.18.0",
+		"cpx-fixed": "^1.6.0",
+		"electron": "^8.0.1",
+		"electron-builder": "^22.3.6",
+		"eslint": "^6.8.0",
+		"typescript": "^3.7.5",
+		"wait-on": "^4.0.1"
+	}
+}
