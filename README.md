@@ -1,5 +1,8 @@
 # electron-ts-vscode-template
 
+> **If you want to develop Electron app with the React, move on to https://github.com/phoihos/electron-react-ts-vscode-template.**
+
+
 **Clone and run for a quick way to see Electron in action.**
 
 This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
@@ -11,7 +14,6 @@ A basic Electron application needs just these files:
 - `./package.json` - Points to the app's main file and lists its details and dependencies.
 - `./src/main.ts` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
 - `./src/index.html` - A web page to render. This is the app's **renderer process**.
-
 
 You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
 
