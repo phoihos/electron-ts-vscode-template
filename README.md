@@ -38,7 +38,7 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 
 ## Debugging
 
-1. Go to the Run view and select **'Run Electron App'** or press <kbd>F5</kbd> key to launch application.
+1. Go to the Run view and select **'Run Electron App'** or press <kbd>F5</kbd> key to start debugging.
 2. Set breakpoints in any of the files.
 
 Note: The breakpoint in the **renderer process** will not be hit immediately while Chrome Debugger attaching to Electron App. If you know about solving this issue, please open an issue on [Github](https://github.com/phoihos/electron-ts-vscode-template/issues).
