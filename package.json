@@ -40,20 +40,20 @@
 		"start": "npm run compile && npm run cp-static && electron ./out/main.js",
 		"pack": "electron-builder --dir",
 		"dist": "electron-builder",
-		"debug:wait": "wait-on tcp:9223"
+		"wait-electron": "wait-on tcp:9223"
 	},
 	"dependencies": {
 		"electron-is-dev": "^1.2.0"
 	},
 	"devDependencies": {
-		"@types/node": "^12.12.39",
-		"@typescript-eslint/eslint-plugin": "^2.33.0",
-		"@typescript-eslint/parser": "^2.33.0",
+		"@types/node": "^12.12.43",
+		"@typescript-eslint/eslint-plugin": "^2.34.0",
+		"@typescript-eslint/parser": "^2.34.0",
 		"cpx-fixed": "^1.6.0",
-		"electron": "^8.3.0",
-		"electron-builder": "^22.6.0",
+		"electron": "^8.3.1",
+		"electron-builder": "^22.7.0",
 		"eslint": "^6.8.0",
-		"typescript": "^3.9.2",
+		"typescript": "^3.9.3",
 		"wait-on": "^4.0.2"
 	}
 }
