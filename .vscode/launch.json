@@ -14,6 +14,9 @@
 			"program": "${workspaceFolder}/out/main.js",
 			"args": [],
 			"runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+			"windows": {
+				"runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+			},
 			"runtimeArgs": [
 				"--remote-debugging-port=9223"
 			],
